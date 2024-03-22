@@ -1,5 +1,6 @@
-/*Menu*/
-.painel_menu{
+/* Adicione o seguinte código em index.css */
+/* Estilos para o menu */
+.painel_menu {
     z-index: 1;
     margin: 2%;
     display: flex;
@@ -8,7 +9,8 @@
     width: 70vw;
     height: 7vh;
 }
-.links_menu{
+
+.links_menu {
     border: 2px solid rgb(0, 155, 155);
     box-shadow: 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adicionando sombra */
     border-radius: 10px;
@@ -19,55 +21,80 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.links_menu li, i,  a{
+
+.links_menu li, .links_menu i, .links_menu a {
     margin-inline: 5px;
     font-size: 1.2em;
     color: #ffffff;
     text-decoration: none;
     list-style: none;
 }
-/*------------------------------------------------*/
-span{
+
+/* Estilos para os textos em negrito */
+span {
     color: rgb(0, 255, 255);
     text-shadow: 0px 0px 5px rgb(0, 255, 255);
 }
-main{
+
+/* Estilos para o conteúdo principal */
+main {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: auto; /* Alterado para "auto" para acomodar o conteúdo */
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column; /* Alterado para "column" para o layout vertical */
+    align-items: center; /* Centralizando */
 }
-.painel_sobre{
-    width: 40%;
-    height: auto;
+
+/* Estilos para o painel "Sobre mim" */
+.painel_sobre {
+    width: 70%; /* Ajuste a largura conforme necessário */
+    margin: 20px; /* Margem externa */
     padding: 20px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
     border-radius: 10px; /* Cantos arredondados */
 }
-/* Estilos para os cards de habilidades */
+
+/* Estilos para os cartões de habilidades */
 .cards_skills {
     color: #ffffff;
-    width: 40%;
-
+    width: 70%; /* Ajuste a largura conforme necessário */
+    margin: 20px; /* Margem externa */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
+
 .hard_skills, .soft_skills {
     background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
     padding: 20px;
     border-radius: 10px; /* Cantos arredondados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-    width: 40%; /* Largura dos cards */
+    width: 45%; /* Largura dos cartões */
+    margin: 10px; /* Margem externa */
 }
+
+/* Estilos para os títulos dos cartões de habilidades */
 .hard_skills h3, .soft_skills h3 {
     font-size: 24px; /* Tamanho do título */
 }
+
+/* Estilos para os itens dos cartões de habilidades */
 .hard_skills p, .soft_skills p {
     font-size: 16px; /* Tamanho do texto */
     margin-bottom: 10px; /* Espaçamento inferior */
 }
+
+/* Estilos para a seção do scroller */
+.scroller-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Margem externa superior e inferior */
+}
+
+/* Adicione estilos adicionais conforme necessário */

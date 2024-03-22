@@ -1,11 +1,15 @@
-*{
+/* Adicione o seguinte código em reset.css */
+
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Define a caixa de modelo como border-box */
 }
 
-body{
+/* Estilos para o corpo */
+body {
     overflow-x: hidden;
-
     background: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,12 +17,11 @@ body{
     font-family: 'Noto Sans Mono', sans-serif;
     margin: 0;
     padding: 0;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; /* Altura mínima da visualização */
 }
 
+/* Adicione estilos adicionais conforme necessário */
