@@ -1,0 +1,73 @@
+/*Menu*/
+.painel_menu{
+    z-index: 1;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 7vh;
+}
+.links_menu{
+    border: 2px solid rgb(0, 155, 155);
+    box-shadow: 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adicionando sombra */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.950);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links_menu li, i,  a{
+    margin-inline: 5px;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+}
+/*------------------------------------------------*/
+span{
+    color: rgb(0, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 255, 255);
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.painel_sobre{
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
+    border-radius: 10px; /* Cantos arredondados */
+}
+/* Estilos para os cards de habilidades */
+.cards_skills {
+    color: #ffffff;
+    width: 40%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hard_skills, .soft_skills {
+    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
+    width: 40%; /* Largura dos cards */
+}
+.hard_skills h3, .soft_skills h3 {
+    font-size: 24px; /* Tamanho do título */
+}
+.hard_skills p, .soft_skills p {
+    font-size: 16px; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
