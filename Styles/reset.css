@@ -1,4 +1,3 @@
-/* Adicione o seguinte código em reset.css */
 
 /* Reset CSS */
 * {
@@ -27,7 +26,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
-    min-height: 100vh; /* Altura mínima da visualização */
+    height: 100vh; /* Altura mínima da visualização */
 }
+
 
 /* Adicione estilos adicionais conforme necessário */

@@ -1,117 +1,203 @@
+/* Estilo para o painel de menu */
 .painel_menu {
-    z-index: 1;
-    margin: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 7vh;
+    z-index: 1; /* Define a ordem de empilhamento do elemento */
+    margin: 2%; /* Define as margens externas */
+    display: flex; /* Define o tipo de exibição como flexível */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    width: 70vw; /* Define a largura em relação à largura da janela de visualização */
+    height: 6vh; /* Define a altura */
 }
 
+/* Estilo para a lista de links no menu */
 .links_menu {
-    border: 2px solid rgb(0, 155, 155);
-    box-shadow: 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adicionando sombra */
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.950);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    border: 2px solid rgb(0, 155, 155); /* Adiciona uma borda sólida */
+    box-shadow: 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adiciona sombra */
+    border-radius: 10px; /* Define o raio da borda */
+    background-color: rgba(0, 0, 0, 0.950); /* Define a cor de fundo com transparência */
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
+    display: flex; /* Define o tipo de exibição como flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: space-evenly; /* Distribui o espaço entre os itens uniformemente */
 }
 
+/* Estilo para os itens da lista, ícones e links no menu */
 .links_menu li, .links_menu i, .links_menu a {
-    margin-inline: 5px;
-    font-size: 1.2em;
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
+    margin-inline: 5px; /* Define a margem interna nas laterais */
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    color: #ffffff; /* Define a cor do texto */
+    text-decoration: none; /* Remove a decoração do texto */
+    list-style: none; /* Remove os marcadores de lista */
 }
 /*---------------------------------------*/
-.painel_contato{
-    padding-inline: 30px;
-    box-sizing: border-box;
-    border: 2px solid rgb(0, 155, 155);
-    border-radius: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+/* Estilo para o painel principal */
+.painel {
+    padding: 30px; /* Adiciona preenchimento interno */
+    box-sizing: border-box; /* Define a caixa de modelagem incluindo as bordas */
+    border: 2px solid rgb(0, 155, 155); /* Adiciona uma borda sólida */
+    border-radius: 20px; /* Define o raio da borda */
+    display: flex; /* Define o tipo de exibição como flexível */
+    justify-content: space-around; /* Distribui os itens igualmente ao redor */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
     flex-direction: column; /* Adiciona uma orientação de coluna para os elementos ficarem empilhados verticalmente */
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-    width: 60vw;
-    height: 60vh;
+    color: #ffffff; /* Define a cor do texto */
+    background-color: rgba(0, 0, 0, 0.950); /* Define a cor de fundo com transparência */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adiciona sombra */
+    width: 60vw; /* Define a largura em relação à largura da janela de visualização */
+    height: 60vh; /* Define a altura em relação à altura da janela de visualização */
 }
-.painel{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+/* Estilo para o painel de contato dentro do painel principal */
+.painel_contato {
+    padding-bottom: 20px; /* Adiciona preenchimento na parte inferior */
+    display: flex; /* Define o tipo de exibição como flexível */
+    justify-content: space-between; /* Distribui o espaço entre os itens uniformemente */
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
 }
-.contatos{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+
+/* Estilo para os contatos */
+.contatos {
+    flex-direction: column; /* Adiciona uma orientação de coluna para os elementos ficarem empilhados verticalmente */
+    justify-content: space-evenly; /* Distribui o espaço entre os itens uniformemente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
 }
-.contatos, .convite{
-    box-sizing: border-box;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-    padding: 20px;
-    border: 2px solid rgb(0, 155, 155);
-    width: 40%;
-  }
-.contatos i{
-    margin-block: 10px;
-    gap: 20px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    font-size: 4em;
+
+/* Estilo para os títulos dos contatos */
+.contatos h1 {
+    gap: 20px; /* Define o espaçamento entre os elementos */
+    display: flex; /* Define o tipo de exibição como flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
 }
-.contatos p {
-    font-size: 0.4em; /* Ajuste o tamanho da fonte conforme necessário */
+
+/* Estilo para os ícones dentro dos títulos dos contatos */
+.contatos h1 i {
+    font-size: 2em; /* Define o tamanho da fonte */
 }
-.convite p{
-    font-size: 1.3em;
+
+/* Estilo para os contatos e convite */
+.contatos, .convite {
+    display: flex; /* Define o tipo de exibição como flexível */
+    background-color: rgba(0, 0, 0, 0.950); /* Define a cor de fundo com transparência */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adiciona sombra */
+    border: 2px solid rgb(0, 155, 155); /* Adiciona uma borda sólida */
+    border-radius: 20px; /* Define o raio da borda */
+    padding: 10px; /* Adiciona preenchimento interno */
+    width: 45%; /* Define a largura */
+    height: 100%; /* Define a altura */
 }
-.sociais{
-    font-size: 4em;
-    display: flex;
-    justify-content: space-evenly; /* Distribui o espaço uniformemente entre os elementos */
-    align-items: center; /* Centraliza os elementos no eixo transversal */
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-    padding-block: 5px;
-    border: 2px solid rgb(0, 155, 155);
-    width: 100%;
-    height: auto; /* Define a altura como 33% da altura total do painel_contato */
+
+/* Estilo para o convite */
+.convite {
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
 }
-.sociais a{
-    text-decoration: none;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Estilo para os ícones sociais */
+.sociais {
+    font-size: 4em; /* Define o tamanho da fonte */
+    display: flex; /* Define o tipo de exibição como flexível */
+    justify-content: space-evenly; /* Distribui o espaço entre os itens uniformemente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    border-radius: 20px; /* Define o raio da borda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adiciona sombra */
+    padding-block: 5px; /* Adiciona preenchimento */
+    border: 2px solid rgb(0, 155, 155); /* Adiciona uma borda sólida */
+    width: 100%; /* Define a largura */
 }
-/*---------------------------------------*/
+/* Estilo para os links sociais */
+.sociais a {
+    text-decoration: none; /* Remove a decoração do texto */
+    color: #ffffff; /* Define a cor do texto */
+    display: flex; /* Define o tipo de exibição como flexível */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estilos para o ícone do GitHub quando o mouse está sobre ele */
 .bxl-github:hover {
-    color: #e65729;
-    transition: 0.2s;
+    color: #e65729; /* Define a cor do ícone quando o mouse está sobre ele */
+    transition: 0.2s; /* Adiciona uma transição suave de 0.2 segundos */
 }
-.bxl-github:not(:hover){
-    transition: 0.5s;
+
+/* Estilos para o ícone do GitHub quando o mouse não está sobre ele */
+.bxl-github:not(:hover) {
+    transition: 0.5s; /* Adiciona uma transição suave de 0.5 segundos */
 }
-/*---------------------------------------*/
+
+/* Estilos para o ícone do Instagram quando o mouse está sobre ele */
 .bxl-instagram:hover {
-    transition: color 0.2s;
+    transition: color 0.2s; /* Adiciona uma transição suave para a mudança de cor do ícone */
     color: transparent; /* Torna o ícone transparente ao passar o mouse */
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80); /* Aplica o gradiente de fundo ao passar o mouse */
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80); /* Aplica um gradiente de fundo ao ícone */
     -webkit-background-clip: text; /* Aplica o gradiente de cor ao texto */
     background-clip: text; /* Aplica o gradiente de cor ao texto */
 }
 
+/* Estilos para o ícone do Instagram quando o mouse não está sobre ele */
 .bxl-instagram:not(:hover) {
-    transition: color 0.5s; /* Adiciona uma transição suave apenas para a mudança de cor do ícone ao remover o mouse */
+    transition: color 0.5s; /* Adiciona uma transição suave para a mudança de cor do ícone ao remover o mouse */
+}
+
+/* Media queries para diferentes larguras de tela */
+@media (width <= 1370px) {
+    /* Estilos para larguras de tela até 1370px */
+    .contatos {
+        word-break: break-all; /* Quebra de palavra */
+        flex-direction: column; /* Altera a orientação dos elementos para coluna */
+        justify-content: space-evenly; /* Distribui o espaço entre os elementos uniformemente */
+        align-items: center; /* Alinha os itens ao centro verticalmente */
+    }
+    
+    .contatos h1 {
+        flex-direction: column; /* Altera a orientação dos elementos para coluna */
+        align-items: center; /* Alinha os itens ao centro verticalmente */
+    }
+    
+    .convite {
+        word-break: break-all; /* Quebra de palavra */
+        justify-content: center; /* Alinha os itens ao centro horizontalmente */
+        align-items: center; /* Alinha os itens ao centro verticalmente */
+    }
+}
+
+@media (width <= 630px) {
+    /* Estilos para larguras de tela até 630px */
+    .links_menu li,
+    .links_menu i,
+    .links_menu a {
+        margin-inline: 5px; /* Define a margem interna nas laterais */
+        font-size: 100%; /* Define o tamanho da fonte */
+        color: #ffffff; /* Define a cor do texto */
+        text-decoration: none; /* Remove a decoração do texto */
+        list-style: none; /* Remove os marcadores de lista */
+    }
+}
+
+@media (width <= 555px) {
+    /* Estilos para larguras de tela até 555px */
+    .painel_menu {
+        width: 90%; /* Define a largura */
+    }
+    
+    .painel {
+        padding: 2%; /* Adiciona preenchimento */
+        width: 90%; /* Define a largura */
+    }
+    
+    .painel_contato {
+        padding-bottom: 10px; /* Adiciona preenchimento na parte inferior */
+        display: flex; /* Define o tipo de exibição como flexível */
+        justify-content: space-between; /* Distribui o espaço entre os itens uniformemente */
+        align-items: center; /* Alinha os itens ao centro verticalmente */
+        width: 100%; /* Define a largura */
+    }
+    
+    .contatos,
+    .convite {
+        font-size: 100%; /* Define o tamanho da fonte */
+        height: 90%; /* Define a altura */
+    }
 }
