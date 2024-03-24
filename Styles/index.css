@@ -35,6 +35,7 @@ main {
     width: 100%;
     height: auto; /* Alterado para "auto" para acomodar o conteúdo */
     display: flex;
+    justify-content: space-between;
     flex-direction: column; /* Alterado para "column" para o layout vertical */
     align-items: center; /* Centralizando */
 }
@@ -43,7 +44,7 @@ main {
 .painel_sobre {
     width: 70%; /* Ajuste a largura conforme necessário */
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 2%;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
@@ -51,6 +52,8 @@ main {
 }
 .painel_sobre p{
     word-wrap: break-word;
+    font-size: clamp(0.1em, 1.2em - .1em, 1.7em);
+    
 }
 
 /* Estilos para os cartões de habilidades */
@@ -82,7 +85,7 @@ main {
 .hard_skills p, .soft_skills p {
     word-wrap: break-word;
     font-size: 16px; /* Tamanho do texto */
-    margin-bottom: 10px; /* Espaçamento inferior */
+    margin-bottom: 2%; /* Espaçamento inferior */
 }
 
 /* Estilos para a seção do scroller */
@@ -95,245 +98,176 @@ main {
 }
 /*-----------------------------------------------------------*/
 /* Adaptação para telas maiores de 4K ou 2560px */
-@media (width >= 1690px){
+@media (width <= 1840px){
     /* Estilos para o menu */
 .painel_menu {
-    z-index: 1;
-    margin: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 6vh;
+    width: 90%;
+    height: 6%;
 }
-
 .links_menu {
-    border: 2px solid rgb(0, 155, 155);
-    box-shadow: 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adicionando sombra */
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.950);
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
-
-.links_menu li, .links_menu i, .links_menu a {
-    margin-inline: 5px;
-    font-size: 1.2em;
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
-}
-
 /* Estilos para o conteúdo principal */
 main {
-    position: relative;
     width: 100%;
-    display: flex;
-    flex-direction: column; /* Alterado para "column" para o layout vertical */
-    align-items: center; /* Centralizando */
 }
-
 /* Estilos para o painel "Sobre mim" */
 .painel_sobre {
-    margin-bottom: 40px;
-    font-size: 1em;
-    width: 70%; /* Ajuste a largura conforme necessário */
+    width: 90%; /* Ajuste a largura conforme necessário */
     height: 100%;
-    padding: 20px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-    border-radius: 10px; /* Cantos arredondados */
 }
-.painel_sobre p, .painel_sobre h1{
-    word-wrap: break-word;
-}
-
 /* Estilos para os cartões de habilidades */
 .cards_skills {
-    color: #ffffff;
-    width: 70%; /* Ajuste a largura conforme necessário */
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    width: 90%; /* Ajuste a largura conforme necessário */
 }
-
 .hard_skills, .soft_skills {
-    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
-    padding: 20px;
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
     width: 45%; /* Largura dos cartões */
     height: 100%;
-    
 }
-
 /* Estilos para os títulos dos cartões de habilidades */
 .hard_skills h3, .soft_skills h3 {
+    font-size: clamp(0.1em, 1.5em, 1.5em);
+}
+
+/* Estilos para os itens dos cartões de habilidades */
+.hard_skills p, .soft_skills p {
+    
+    font-size: clamp(0.1em, 1em, 1.5em);
+}
+}
+/*---------------------------------------------------------------------------*/
+@media (width <= 1457px){
+    .painel_sobre{
+        margin-bottom: 2%;
+    }
+    .hard_skills, .soft_skills {
+        height: 25vh;
+        
+        
+    }
+    /* Estilos para os títulos dos cartões de habilidades */
+.hard_skills h3, .soft_skills h3 {
     word-wrap: break-word;
-    font-size: 1.5em; /* Tamanho do título */
+    font-size: 1.3em; /* Tamanho do título */
 }
 
 /* Estilos para os itens dos cartões de habilidades */
 .hard_skills p, .soft_skills p {
     word-wrap: break-word;
-    font-size: 1em; /* Tamanho do texto */
-    margin-bottom: 10px; /* Espaçamento inferior */
-}
-
-/* Estilos para a seção do scroller */
-.scroller-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tag-list li{
-    
-    font-size: 1em;
+    font-size: 0.8em; /* Tamanho do texto */
+    margin-bottom: 2%; /* Espaçamento inferior */
 }
 }
-/*---------------------------------------------------------------------------*/
-@media (width <= 628px){
+/*----------------------------------------------------------*/
+@media (width <= 1024px){
+    .painel_sobre{
+        height: 50%;
+    }
+    .painel_sobre h1{
+        font-size: 1.2em;
+    }
+    .painel_sobre p {
+        font-size: clamp(0.1em, .8em - .1rem, 0.8em);
+    }
+}
+/*----------------------------------------------------------*/
+@media (width <= 768px){
     /* Estilos para o menu */
 .painel_menu {
-    z-index: 1;
-    margin: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 7vh;
+    width: 90%;
+    height: 6%;
 }
-
 .links_menu {
-    border: 2px solid rgb(0, 155, 155);
-    box-shadow: 0px 1.5px 5px 0px rgb(0, 155, 155); /* Adicionando sombra */
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.950);
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .links_menu li, .links_menu i, .links_menu a {
     margin: 5px;
     font-size: 100%;
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
-}
 
-/* Estilos para o conteúdo principal */
-main {
-    position: relative;
-    width: 100%;
-    height: auto; /* Alterado para "auto" para acomodar o conteúdo */
-    display: flex;
-    flex-direction: column; /* Alterado para "column" para o layout vertical */
-    align-items: center; /* Centralizando */
 }
-
 /* Estilos para o painel "Sobre mim" */
 .painel_sobre {
-    width: 70%; /* Ajuste a largura conforme necessário */
+    width: 90%; /* Ajuste a largura conforme necessário */
     padding: 20px;
-    margin-bottom: 40px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-    border-radius: 10px; /* Cantos arredondados */
+}
+.painel_sobre h1{
+    font-size: clamp(0.1em, .8em, 1.5em);
 }
 .painel_sobre p{
-    word-wrap: break-word;
+    font-size: clamp(0.1em, .6em, 1.5em);
 }
 
 /* Estilos para os cartões de habilidades */
 .cards_skills {
-    color: #ffffff;
-    width: 70%; /* Ajuste a largura conforme necessário */
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    width: 90%; /* Ajuste a largura conforme necessário */
 }
 
 .hard_skills, .soft_skills {
     height: 100%;
-    width: 45%; /* Largura dos cartões */
-    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
-    padding: 20px;
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
 }
 
 /* Estilos para os títulos dos cartões de habilidades */
 .hard_skills h3, .soft_skills h3 {
-    font-size: 24px; /* Tamanho do título */
+    font-size: clamp(0.1em, .8em, 1.5em);
 }
 
 /* Estilos para os itens dos cartões de habilidades */
 .hard_skills p, .soft_skills p {
-    word-wrap: break-word;
-    font-size: 16px; /* Tamanho do texto */
-    margin-bottom: 10px; /* Espaçamento inferior */
+    font-size: clamp(0.1em, .6em, 1.5em);
 }
-
-/* Estilos para a seção do scroller */
-.scroller-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.scroller-section{
+    font-size: clamp(0.1em, .8em, 1.5em);
 }
 }
 @media (width <= 402px){
-/* Estilos para os cartões de habilidades */
-.cards_skills {
-    color: #ffffff;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hard_skills, .soft_skills {
-    height: 100%;
-    width: 45%; /* Largura dos cartões */
-    background-color: rgba(0, 0, 0, 0.950); /* Cor de fundo */
-    padding: 20px;
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0px 1.5px 5px 0px rgb(0, 155, 155); /* Sombra */
-}
-
-/* Estilos para os títulos dos cartões de habilidades */
-.hard_skills h3, .soft_skills h3 {
-    font-size: 24px; /* Tamanho do título */
-}
-
-/* Estilos para os itens dos cartões de habilidades */
-.hard_skills p, .soft_skills p {
-    word-wrap: break-word;
-    font-size: 16px; /* Tamanho do texto */
-    margin-bottom: 10px; /* Espaçamento inferior */
-}
-
-/* Estilos para a seção do scroller */
-.scroller-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Estilos para o menu */
+    .painel_menu {
+        width: 90%;
+        height: 6%;
+    }
+    .links_menu {
+        width: 100%;
+        height: 100%;
+    }
     
-}
+    .links_menu li, .links_menu i, .links_menu a {
+        margin: 5px;
+        font-size: clamp(0.1em, .9em, 1.5em);
+    
+    }
+    /* Estilos para o painel "Sobre mim" */
+    .painel_sobre {
+        width: 90%; /* Ajuste a largura conforme necessário */
+    }
+    .painel_sobre h1{
+        font-size: clamp(0.1em, .7em, 1.5em);
+    }
+    .painel_sobre p{
+        font-size: clamp(0.1em, .5em, 1.5em);
+    }
+    
+    /* Estilos para os cartões de habilidades */
+    .cards_skills {
+        width: 90%; /* Ajuste a largura conforme necessário */
+    }
+    
+    .hard_skills, .soft_skills {
+        height: 100%;
+    }
+    
+    /* Estilos para os títulos dos cartões de habilidades */
+    .hard_skills h3, .soft_skills h3 {
+        font-size: clamp(0.1em, .7em, 1.5em);
+    }
+    
+    /* Estilos para os itens dos cartões de habilidades */
+    .hard_skills p, .soft_skills p {
+        font-size: clamp(0.1em, .5em, 1.5em);
+    }
+    .scroller-section{
+        font-size: clamp(0.1em, .7em, 1.5em);
+    }
 }
